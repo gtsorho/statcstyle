@@ -103,6 +103,7 @@ h2, h3 {
     padding-left: 0;
     padding-right: 0;
     border-radius: 0;
+    color: #ffffff !important;
     background-color: #fff0 !important;
 }
 .btn, .form-control {
