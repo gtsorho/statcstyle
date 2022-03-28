@@ -1,6 +1,6 @@
 <template>
 
-<vueper-slides id="scrollspyHeading1" autoplay ref="myVueperSlides" :parallax="parallax" :parallax-fixed-content="parallaxFixedContent" >
+<vueper-slides id="scrollspyHeading1" autoplay ref="myVueperSlides" :parallax="parallax" :parallax-fixed-content="parallaxFixedContent"  >
     <vueper-slide
     v-for="(slide, i) in slides" :key="i"
     :image="slide.image"
@@ -88,5 +88,10 @@ export default {
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 900;
+}
+@media screen and (max-width: 530px) {
+   .vueperslides__parallax-wrapper{
+        height: 400px !important;
+    }
 }
 </style>
